@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!------------------------------Header---------------------------->
+    <section class="navbar-Section">
+      <nav class="navbar">
+        <a href="#" id="a1">Resume.</a>
+        <i class="bx bx-menu" id="box-menu"></i>
+        <ul class="nav-list">
+          <li><a href="" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="">Templates</a></li>
+          <li><a href="">Conatct</a></li>
+        </ul>
+        <i onclick="showNavBar()" class='bx bx-menu' id="hamburger"></i>
+      </nav>
+       <!--HamBurger Navbar-->
+       <ul class="nav-list-hamburder" id="showNav">
+        <li><a href="" class="active">Home</a><i onclick="closeNavbar()" class='bx bx-x' id="move"></i></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="">Templates</a></li>
+        <li><a href="">Conatct</a></li>
+      </ul>
+    </section>
+
+    <!--------------------------- Section for Home ---- ---------------->
+
+    <section class="section-home">
+      <div class="home-content">
+        <h3>Asslam-o-Alaikum</h3>
+        <h2>It'x Zohaib</h2>
+        <h3>And I am a <span class="changing-text">Web Developer</span></h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, ab.
+          Perspiciatis, sed dolores dolor quidem ex voluptatem error debitis
+          accusamus culpa, illum alias reprehenderit facere, nulla veniam
+          eligendi veritatis nemo. Illum ipsa distinctio ea, recusandae, dolorem
+          porro corporis sint ab ad unde ut.
+        </p>
+        <div class="home-social-icons">
+          <i class="bx bxl-facebook"></i>
+          <i class="bx bxl-twitter"></i>
+          <i class="bx bxl-instagram"></i>
+          <i class="bx bxl-linkedin"></i>
+        </div>
+        <br />
+        <a href="#" class="btn-home">Download CV</a>
+      </div>
+      <div class="home-img">
+        <img src="images/png.webp" alt="" />
+      </div>
+    </section>
+
+    <!-- -------------------------section for About --------------->
+
+    <section class="about" id="about">
+      <div class="about-image">
+        <img src="images/png.webp" alt="" />
+      </div>
+
+      <div class="about-heading">
+        <h3>About <span>Me</span></h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis
+          tempore consequatur molestias esse, architecto nostrum adipisci iste
+          unde tenetur earum porro dolore cumque magni corrupti harum quasi,
+          dolorem, provident labore laudantium voluptatem cupiditate ea deserunt
+          sunt vero? Tempora officiis neque obcaecati. Qui amet repellendus
+          harum incidunt?.
+        </p>
+        <a href="" class="btn-home">Read More</a>
+      </div>
+    </section>
+
+    <!------------------- Tempaltes Section ------------------------>
+
+  <script>
+    function showNavBar(){
+      const sideBar = document.querySelector('.nav-list-hamburder')
+      sideBar.style.display ='flex'
+      
+      const hidemenu = document.querySelector('#hamburger')
+      hidemenu.style.display = 'none'
+    }
+    function closeNavbar(){
+      const hidebar =  document.querySelector('.nav-list-hamburder')
+      hidebar.style.display ='none'
+      const showmenu = document.querySelector('#hamburger')
+      showmenu.style.display = 'flex'
+    }
+  </script>
+  </body>
+</html>
